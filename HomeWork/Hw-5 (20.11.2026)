@@ -1,0 +1,131 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "---------ЗАДАНИЕ 1----------" "\n";
+    int a;
+    cout << "Ведите номер дня недели (1-7): ";
+    cin >> a;
+
+    switch (a)
+    {
+    case 1:
+        cout << "Понедельник";
+        break;
+    case 2:
+        cout << "Вторник";
+        break;
+    case 3:
+        cout << "Среда";
+        break;
+    case 4:
+        cout << "Четверг";
+        break;
+    case 5:
+        cout << "Пятница";
+        break;
+    case 6:
+        cout << "Суббота";
+        break;
+    case 7:
+        cout << "Воскресенье";
+        break;
+    default:
+        cout << "Ведите корректный номер дня";
+        break;
+    }
+    cout << "\n";
+
+    cout << "---------ЗАДАНИЕ 2----------" "\n";
+    int b;
+    cout << "Меню:" "\n";
+    cout << "1 - Пицца - 500 руб." "\n";
+    cout << "2 - Бургер - 300 руб." "\n";
+    cout << "3 - Салат - 250 руб." "\n";
+    cout << "4 - Чай - 100 руб." "\n";
+    cout << "Выберите блюдо (1-4): ";
+    cin >> b;
+
+    switch (b)
+    {
+    case 1:
+        cout << "Пицца - Цена: 500 руб.";
+        break;
+    case 2:
+        cout << "Бургер - Цена: 300 руб.";
+        break;
+    case 3:
+        cout << "Салат - Цена: 250 руб.";
+        break;
+    case 4:
+        cout << "Чай - Цена: 100 руб.";
+        break;
+    default:
+        cout << "Такого блюда нет в меню";
+        break;
+    }
+    cout << "\n";
+
+    cout << "---------ЗАДАНИЕ 3----------" "\n";
+    int age;
+    cout << "Введите возраст: ";
+    cin >> age;
+
+    if (age < 5)
+    {
+        cout << "Бесплатно";
+    }
+    else if (age < 17)
+    {
+        cout << "Стоимость билета: 250 руб.";
+    }
+    else if (age < 65)
+    {
+        cout << "Стоимость билета: 500 руб.";
+    }
+    else
+    {
+        cout << "Стоимость билета: 350 руб.";
+    }
+    cout << "\n";
+
+    cout << "---------ЗАДАНИЕ 4----------" "\n";
+    int month;
+    cout << "Введите номер месяца (1-12): ";
+    cin >> month;
+
+    switch (month)
+    {
+    case 12:
+    case 1:
+    case 2:
+        cout << "Зима";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        cout << "Весна";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        cout << "Лето";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        cout << "Осень";
+        break;
+    default:
+        cout << "Некорректный номер месяца";
+        break;
+    }
+    cout << "\n";
+
+    return 0;
+}

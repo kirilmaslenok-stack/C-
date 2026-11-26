@@ -1,0 +1,83 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "--------------------------ЗАДАНИЕ 2----------------------------------" "\n";
+
+    {
+        int n;
+        cout << "Введите четырехзначное число: ";
+        cin >> n;
+
+        int a = n % 10;
+        int b = n / 10 % 10;
+        int c = n / 100 % 10;
+        int d = n / 1000;
+
+        int result = a * 1000 + b * 100 + c * 10 + d;
+
+        cout << "Перевернутое число: " << result << endl;
+    }
+
+    cout << "--------------------------ЗАДАНИЕ 3----------------------------------" "\n";
+
+    {
+        int n;
+        cout << "Введите четырехзначное число: ";
+        cin >> n;
+
+        int a = n % 10;
+        int b = n / 10 % 10;
+        int c = n / 100 % 10;
+        int d = n / 1000;
+
+        int result = a * b * c * d;
+
+        cout << "Произведение цифр: " << result << endl;
+    }
+
+    cout << "--------------------------ЗАДАНИЕ 4----------------------------------" "\n";
+
+    {
+        int n, m;
+        cout << "Введите размеры рамки N и M: ";
+        cin >> n >> m;
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                if (i == 0 || i == n - 1 || j == 0 || j == m - 1)
+                    cout << "*";
+                else
+                    cout << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    cout << "--------------------------ЗАДАНИЕ 5----------------------------------" "\n";
+
+    {
+        int a, b;
+        cout << "Введите два числа: ";
+        cin >> a >> b;
+
+        while (b != 0)
+        {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+
+        cout << "НОД: " << a << endl;
+    }
+
+    return 0;
+}

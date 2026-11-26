@@ -1,0 +1,49 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main() 
+{
+	SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "ЗАДАЧА 1" "\n";
+    float x;
+    cout << "Введите число: ";
+    cin >> x;
+    cout << "Кубический корень: " << cbrt(x) << "\n";
+    cout << "Квадратный корень: " << sqrt(x) << "\n";
+
+    cout << "ЗАДАЧА 2" "\n";
+    float a, b;
+    cout << "Введите первое число: ";
+    cin >> a;
+    cout << "Введите второе число: ";
+    cin >> b;
+    cout << "Модуль разности = " << fabs(a - b) << "\n";
+
+    cout << "ЗАДАЧА 3" "\n";
+    double w;
+    cout << "Введите число: ";
+    cin >> w;
+    w = w * 3.14 / 180;
+    cout << "Тангенс: " << tan(w) << "\n";
+
+    cout << "ЗАДАЧА 4" << "\n";
+    double S, p, n;
+    cout << "Введите сумму вклада: ";
+    cin >> S;
+    cout << "Введите процентную ставку: ";
+    cin >> p;
+    cout << "Введите количество лет: ";
+    cin >> n;
+    cout << "Сумма вклада: " << S * pow(1 + p / 100.0, n) << "\n";
+
+
+    cout << "ЗАДАЧА 5" << "\n";
+    double r, v;
+    cout << "Введите радиус: ";
+    cin >> r;
+    v = 4.0 / 3.0 * 3.14 * pow(r, 3);
+    cout << "Объём шара: " << V << "\n";
+}
